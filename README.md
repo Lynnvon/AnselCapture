@@ -1,3 +1,6 @@
+Fork from https://github.com/rdeioris/AnselCapture
+UE4 4.16 Version
+
 # AnselCapture
 Hack of the official Unreal Engine Ansel plugin for allowing continuous capturing (360 videos)
 
