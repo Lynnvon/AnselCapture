@@ -16,7 +16,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/SWindow.h"
 #include "Application/SlateApplicationBase.h"
-#include <Runtime/ApplicationCore/Public/Windows/WindowsApplication.h>
+//#include <Runtime/ApplicationCore/Public/Windows/WindowsApplication.h>
+#include "Runtime/Core/Public/Windows/WindowsApplication.h"
 #include "Runtime/Core/Public/Misc/OutputDeviceNull.h"
 #include "Runtime/Launch/Resources/Version.h"
 #include "AnselCaptureFunctionLibrary.h"

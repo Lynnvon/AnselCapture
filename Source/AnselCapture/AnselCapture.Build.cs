@@ -7,7 +7,7 @@ public class AnselCapture : ModuleRules
 {
     private string EnginePath
     {
-        get { return EngineDirectory; }
+        get { return BuildConfiguration.RelativeEnginePath; }
     }
 
     private string ThirdPartyPath
@@ -71,15 +71,16 @@ public class AnselCapture : ModuleRules
 
             string DLLName = LibName + ".dll";
             PublicDelayLoadDLLs.Add(DLLName);
-            RuntimeDependencies.Add(BinariesPath + DLLName);
+            //RuntimeDependencies.Add(BinariesPath + DLLName);
+            RuntimeDependencies.Add(new RuntimeDependency(Path.Combine(BinariesPath + DLLName)));
 
-            PublicDefinitions.Add("WITH_ANSEL=1");
-            PublicDefinitions.Add("ANSEL_DLL=" + DLLName);
+            Definitions.Add("WITH_ANSEL=1");
+            Definitions.Add("ANSEL_DLL=" + DLLName);
         }
         else
         {
-            PublicDefinitions.Add("WITH_ANSEL=0");
-            PublicDefinitions.Add("ANSEL_DLL=");
+            Definitions.Add("WITH_ANSEL=0");
+            Definitions.Add("ANSEL_DLL=");
         }        
 
         PrivateDependencyModuleNames.AddRange(new string[]
