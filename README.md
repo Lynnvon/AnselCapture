@@ -1,5 +1,9 @@
 Fork from https://github.com/rdeioris/AnselCapture
+
 UE4 4.16 Version
+
+Replace NVIDIA Ansel plugin files(CameraPhotography.h/ CameraPhotography.cpp/ CameraPhotographyModule.h) . The file is in Resources folder
+
 
 # AnselCapture
 Hack of the official Unreal Engine Ansel plugin for allowing continuous capturing (360 videos)
