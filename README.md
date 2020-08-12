@@ -1,6 +1,6 @@
 Fork from https://github.com/rdeioris/AnselCapture
 
-UE4 4.16 Version
+UE4 4.16 Version  修改了几个文件使的此插件可以在4.16上使用
 
 Replace NVIDIA Ansel plugin files(CameraPhotography.h/ CameraPhotography.cpp/ CameraPhotographyModule.h) . The file is in Resources folder
 
